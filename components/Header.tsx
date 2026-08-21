@@ -40,9 +40,9 @@ export function Header() {
         aria-hidden="true"
       />
 
-      <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-3 py-2.5 sm:gap-4 sm:py-3.5 lg:py-4">
+      <Container className="relative grid grid-cols-[auto_1fr_auto] items-center gap-3 py-1.5 sm:gap-4 sm:py-2 lg:py-2.5">
         <Link href="/" className="focus-ring shrink-0 justify-self-start rounded-lg" aria-label="IPTV Iconic — Home">
-          <Logo className="h-8 w-auto sm:h-9" />
+          <Logo className="h-16 w-auto sm:h-[4.5rem]" priority />
         </Link>
 
         <nav className="hidden items-center justify-center gap-1 lg:flex" aria-label="Primary">

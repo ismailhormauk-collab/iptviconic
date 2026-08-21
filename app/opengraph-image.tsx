@@ -1,11 +1,15 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { siteConfig } from "@/lib/site";
 
 export const alt = "IPTV Iconic — Premium TV Streaming Experience";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OpengraphImage() {
+  const logoBuffer = readFileSync(join(process.cwd(), "public/images/branding/iptv-iconic-logo.png"));
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -32,34 +36,13 @@ export default async function OpengraphImage() {
             display: "flex",
           }}
         />
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 20,
-            marginBottom: 36,
-          }}
-        >
-          <div
-            style={{
-              width: 84,
-              height: 84,
-              borderRadius: 22,
-              background: "#2166f0",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 40,
-              fontWeight: 700,
-              color: "#ffffff",
-            }}
-          >
-            ▶
-          </div>
-          <div style={{ display: "flex", fontSize: 54, fontWeight: 700, color: "#0b1220", letterSpacing: -1 }}>
-            {siteConfig.name}
-          </div>
-        </div>
+        <img
+          src={logoSrc}
+          alt="IPTV Iconic"
+          width={480}
+          height={174}
+          style={{ objectFit: "contain", marginBottom: 36 }}
+        />
         <div
           style={{
             display: "flex",

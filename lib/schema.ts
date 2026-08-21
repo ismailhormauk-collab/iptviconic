@@ -9,7 +9,7 @@ export function organizationSchema() {
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: absoluteUrl("/logo.png"),
+    logo: absoluteUrl("/images/branding/iptv-iconic-logo.png"),
     description: siteConfig.description,
     contactPoint: [
       {
@@ -84,7 +84,7 @@ export function articleSchema(post: BlogPost, imagePath?: string) {
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/logo.png"),
+        url: absoluteUrl("/images/branding/iptv-iconic-logo.png"),
       },
     },
     mainEntityOfPage: absoluteUrl(`/blog/${post.slug}`),

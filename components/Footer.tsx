@@ -85,7 +85,7 @@ export function Footer() {
       <Container className="relative grid grid-cols-1 gap-12 py-16 sm:grid-cols-2 sm:py-20 lg:grid-cols-[1.5fr_1fr_1fr] lg:gap-10">
         <div className="flex flex-col gap-6">
           <Link href="/" className="focus-ring inline-block w-fit rounded-lg" aria-label="IPTV Iconic — Home">
-            <Logo className="h-9 w-auto" />
+            <Logo className="h-[4.5rem] w-auto" />
           </Link>
           <p className="max-w-sm text-sm leading-relaxed text-mist">
             Premium IPTV player software for managing your own playlists, EPG guides and devices —
