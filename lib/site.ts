@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "IPTV Iconic",
   shortName: "IPTV Iconic",
   domain: "iptviconic.com",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://iptviconic.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.iptviconic.com",
   tagline: "Premium TV streaming experience",
   description:
     "IPTV Iconic offers premium IPTV player software with M3U playlist support, EPG guides, multi-device compatibility and dedicated setup support. Software only — bring your own legally licensed content.",

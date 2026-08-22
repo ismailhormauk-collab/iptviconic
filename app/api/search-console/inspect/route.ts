@@ -5,10 +5,10 @@ import { siteConfig } from "@/lib/site";
 export const runtime = "nodejs";
 
 /**
- * GET /api/search-console/inspect?url=https://iptviconic.com/some-page
+ * GET /api/search-console/inspect?url=https://www.iptviconic.com/some-page
  *
  * Reports Google's current indexing status for a single URL on this site.
- * Restricted to https://iptviconic.com/* URLs only. This reports status —
+ * Restricted to https://www.iptviconic.com/* URLs only. This reports status —
  * it does NOT request or guarantee indexing of the URL. Admin-only.
  */
 export async function GET(request: Request) {

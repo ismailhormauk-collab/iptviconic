@@ -9,7 +9,7 @@ const VALID_DIMENSIONS: SearchAnalyticsDimension[] = ["query", "page", "country"
  * GET /api/search-console/analytics?startDate=YYYY-MM-DD&endDate=YYYY-MM-DD&dimensions=query,page&rowLimit=100
  *
  * Returns Search Analytics (clicks, impressions, CTR, position) for
- * https://iptviconic.com/ over the given date range. Admin-only.
+ * https://www.iptviconic.com/ over the given date range. Admin-only.
  */
 export async function GET(request: Request) {
   if (!isAuthorizedAdminRequest(request)) return unauthorizedResponse();

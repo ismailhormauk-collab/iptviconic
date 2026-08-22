@@ -6,10 +6,11 @@ import "server-only";
  * intentionally the smallest thing that works: a bearer token compared
  * against ADMIN_API_SECRET (server-side only env var).
  *
- * Callers must target https://iptviconic.com directly with the bearer
- * token — a redirect to a different host would cause some HTTP clients
- * to silently drop the Authorization header, producing a misleading 401
- * even with a correct secret.
+ * Callers must target https://www.iptviconic.com directly with the bearer
+ * token — a redirect to a different host (e.g. the apex domain, which
+ * redirects here) would cause some HTTP clients to silently drop the
+ * Authorization header, producing a misleading 401 even with a correct
+ * secret.
  */
 export function isAuthorizedAdminRequest(request: Request): boolean {
   const secret = process.env.ADMIN_API_SECRET;
