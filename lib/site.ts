@@ -8,8 +8,8 @@ export const siteConfig = {
     "IPTV Iconic offers premium IPTV player software with M3U playlist support, EPG guides, multi-device compatibility and dedicated setup support. Software only — bring your own legally licensed content.",
   locale: "en_US",
   contact: {
-    whatsappNumber: "+447576599069",
-    whatsappHref: "https://wa.me/447576599069",
+    whatsappNumber: "+34613836698",
+    whatsappHref: "https://wa.me/34613836698",
     telegramHref: "https://t.me/pulseiptv4k",
   },
   social: {
